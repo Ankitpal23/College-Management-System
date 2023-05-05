@@ -1,0 +1,42 @@
+package CommandLineArgument;
+//wap to ask user name age and salary and display then 
+//and check if age>18 then print eligible for voting else not eligible 
+
+
+
+//if we run program from commandline 
+   // compile --> javac CMDExample.java 
+   // run     --> java CMDExample  amit 22 23445 4435 5.4545 345 345 35 45 43 53 45 34 dfdsfs 543 
+
+
+//if we run program through eclipse 
+//run program once --> run--> run configuration--> select file name from left side -->
+//argument tab -->write arguments
+
+public class CMDExample2 {
+
+	
+	 
+	public static void main(String[] args)
+	{
+		 String name = args[0];
+       //convert string to integer
+		 //Integer -- predefined class
+		 //parseInt() - method 
+		 int age     = Integer.parseInt(args[1]);
+		 
+
+	       //convert string to float
+			 //Float -- predefined class
+			 //parseFloat() - method 
+		 float salary= Float.parseFloat(args[2]);
+		 
+		 if(age>=18)
+
+			 System.out.println("eligible for voting ");
+		 else
+			 
+			 System.out.println("not eligible for voting ");
+	}
+
+}
